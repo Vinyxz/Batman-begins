@@ -1,0 +1,86 @@
+/*
+  feel free to change $rand
+  it changes the amplitude 
+*/
+@-webkit-keyframes batman {
+  0% {
+    transform: translate(4126%, 1758%);
+    opacity: 0;
+  }
+  30%, 60% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-2769%, -4811%);
+    opacity: 0;
+  }
+}
+@-moz-keyframes batman {
+  0% {
+    transform: translate(-1982%, -4732%);
+    opacity: 0;
+  }
+  30%, 60% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-1624%, -295%);
+    opacity: 0;
+  }
+}
+@-o-keyframes batman {
+  0% {
+    transform: translate(478%, 2086%);
+    opacity: 0;
+  }
+  30%, 60% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-2362%, -3838%);
+    opacity: 0;
+  }
+}
+@keyframes batman {
+  0% {
+    transform: translate(843%, 3327%);
+    opacity: 0;
+  }
+  30%, 60% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(4857%, -1945%);
+    opacity: 0;
+  }
+}
+body {
+  margin: 0;
+  overflow: hidden;
+}
+body svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  background: -webkit-radial-gradient(#01579B, #000);
+  background: -o-radial-gradient(#01579B, #000);
+  background: -moz-radial-gradient(#01579B, #000);
+  background: radial-gradient(#01579B, #000);
+}
+body svg g {
+  -webkit-filter: url(#edge-cleaner);
+  filter: url(#edge-cleaner);
+}
+body svg polygon {
+  opacity: 0;
+  transform-box: fill-box;
+  -webkit-animation: batman 6s infinite;
+  -moz-animation: batman 6s infinite;
+  -o-animation: batman 6s infinite;
+  animation: batman 6s infinite;
+}
